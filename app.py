@@ -107,7 +107,7 @@ if _missing:
     print("호스팅 패널의 '환경변수(Environment Variables)' 설정에서 위 값들을 등록해주세요.")
     sys.exit(1)
 
-POLL_INTERVAL_SEC = int(os.environ.get("POLL_INTERVAL_SEC", "300"))  # 몇 초마다 확인할지
+POLL_INTERVAL_SEC = int(os.environ.get("POLL_INTERVAL_SEC", "60"))  # 몇 초마다 확인할지
 STATE_FILE = Path(__file__).parent / "state.json"
 
 # ==========================================================
